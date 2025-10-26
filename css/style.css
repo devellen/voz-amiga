@@ -85,7 +85,6 @@
 
 .button-sec1:hover {
     background-color: #4B3DB3;
-    color: white;
 }
 
 .button-sec1 a:hover {
@@ -111,11 +110,42 @@
 }
 
 .icon {
-    width: 45px ;
+    width: 45px;
 }
 
 .card-sec2 {
     background-color: #6A5EC4;
+}
+
+/* section 3 */
+
+.input {
+    width: 100%;
+    border: none;
+    background-color: #ecebf1;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input::placeholder {
+    padding-left: 8px;
+    font-size: 10px;
+}
+
+.button-form {
+    background-color: #d2cfe2;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.button-form:hover {
+    background-color: #2C1AAE;
+}
+
+.titulo-form {
+    color: white;
 }
 
 /*------------------- tablet -----------------------*/
@@ -168,6 +198,11 @@
         margin-top: 25px;
     }
 
+    /* section 3 */
+    .input {
+        width: 80%;
+    }
+
 
 }
 
@@ -218,5 +253,14 @@
 
     .button-sec1 {
         padding: 8px 14px;
+    }
+
+    /* section 3 */
+    .titulo-form {
+        font-size: 20px;
+    }
+
+    .input::placeholder {
+        font-size: 15px;
     }
 }
