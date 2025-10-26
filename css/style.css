@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eddaf1;
+    background-color: #d2cfe2;
     height: 12vh;
     padding: 20px;
 }
@@ -58,7 +58,7 @@
 
 .sec1 {
     /* opacity: 0.8; */
-    background-color: #CF81DA;
+    background-color: #6A5EC4;
     min-width: 100%;
     padding: 30px;
 }
@@ -70,7 +70,7 @@
 
 
 .button-sec1 {
-    background-color: #eddaf1;
+    background-color: #d2cfe2;
     color: white;
     padding: 6px 14px;
     border: none;
@@ -84,7 +84,7 @@
 }
 
 .button-sec1:hover {
-    background-color: #9D32AC;
+    background-color: #4B3DB3;
     color: white;
 }
 
@@ -103,7 +103,7 @@
 /* section 2 */
 
 .sec2 {
-    background-color: #eddaf1;
+    background-color: #d2cfe2;
 }
 
 .titulo {
@@ -115,7 +115,7 @@
 }
 
 .card-sec2 {
-    background-color: #CF81DA;
+    background-color: #6A5EC4;
 }
 
 /*------------------- tablet -----------------------*/
@@ -140,7 +140,7 @@
     }
 
     .naveg ul li a:hover {
-        background-color: #CF81DA;
+        background-color: #6A5EC4;
         padding: 5px;
         border-radius: 5px;
     }
@@ -183,7 +183,7 @@
     }
 
     .header .button {
-        background-color: #CF81DA;
+        background-color: #6A5EC4;
         color: white;
         padding: 8px 16px;
         border: none;
@@ -192,7 +192,7 @@
     }
 
     .button:hover {
-        background-color: #9D32AC;
+        background-color: #4B3DB3;
     }
 
     .button a {
