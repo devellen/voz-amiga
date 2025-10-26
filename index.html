@@ -25,7 +25,7 @@
                 <li><a href="#">Blog</a></li>
             </ul>
         </div>
-        <button class="button"><a href="">Seja voluntário</a></button>
+        <button class="button"><a href="#leadForm">Seja voluntário</a></button>
     </header>
 
     <section class="sec1 p-md-5" id="sec1">
@@ -38,7 +38,7 @@
                     <p>Milhares de idosos vivem sozinhos e sentem falta de algo simples: uma boa conversa.
                         No Voz Amiga, você doa o que há de mais valioso — seu tempo e sua escuta — para levar companhia
                         e alegria a quem precisa.</p>
-                    <button class="button-sec1"><a href="">Seja voluntário</a></button>
+                    <button class="button-sec1"><a href="#leadForm">Seja voluntário</a></button>
                 </div>
                 <div class="col-12 col-md-6">
                     <img class='img' src="assets/idoso.jpg" alt="">
@@ -93,7 +93,7 @@
                 <div class="col-12 col-md-6">
                     <div class="card card-sec2 p-4">
                         <form id="leadForm">
-                            <p class="titulo-form">Cadastre-se para ser um voluntário</p>
+                            <p class="titulo-form">Se interessou? Inscreva-se para saber mais!</p>
                             <input class="input" type="text" id="nome" name="nome" required
                                 placeholder="Nome"><br /><br />
 
@@ -110,6 +110,20 @@
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="div-media">
+            <ul class="list-media">
+                <li><img src="../assets/facebook (1).png" alt=""></li>
+                <li><img src="../assets/twitter.png" alt=""></li>
+                <li><img src="../assets/instagram.png" alt=""></li>
+                <li><img src="../assets/linkedin.png" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- ===================================================================== -->
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyNuRtUPdo0te2EEkKr3gU_5EtgX8sgWtgljtq0_P4k1A3it4D1mQ3DaQU8SiORmwbW/exec'; // sua URL aqui
@@ -136,7 +150,7 @@
             } catch (error) {
                 document.getElementById('msg').textContent = 'Erro ao enviar. Tente novamente.';
                 console.error(error);
-            }   
+            }
         });
 
 
