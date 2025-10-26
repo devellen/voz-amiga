@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/vanilla-masker/build/vanilla-masker.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Voz Amiga</title>
 </head>
@@ -93,11 +94,14 @@
                     <div class="card card-sec2 p-4">
                         <form id="leadForm">
                             <p class="titulo-form">Cadastre-se para ser um voluntário</p>
-                            <input class="input" type="text" id="nome" name="nome" required placeholder="Nome"><br /><br />
+                            <input class="input" type="text" id="nome" name="nome" required
+                                placeholder="Nome"><br /><br />
 
-                            <input class="input" type="email" id="email" name="email" required placeholder="Email"><br /><br />
+                            <input class="input" type="email" id="email" name="email" required
+                                placeholder="Email"><br /><br />
 
-                            <input class="input" type="text" id="telefone" name="telefone" placeholder="Telefone"><br /><br />
+                            <input class="input" type="text" id="telefone" name="telefone" required
+                                placeholder="Telefone"><br /><br />
 
                             <button class="button-form" type="submit">Enviar</button>
                         </form>
@@ -132,8 +136,14 @@
             } catch (error) {
                 document.getElementById('msg').textContent = 'Erro ao enviar. Tente novamente.';
                 console.error(error);
-            }
+            }   
         });
+
+
+
+        // Aplica a máscara de telefone
+        const telInput = document.getElementById('telefone');
+        VMasker(telInput).maskPattern('(99) 99999-9999');
     </script>
 </body>
 
