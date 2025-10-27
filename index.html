@@ -1,164 +1,286 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/fav-icon.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/fav-icon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script src="https://unpkg.com/vanilla-masker/build/vanilla-masker.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Voz Amiga</title>
-</head>
+  </head>
 
-<body>
-    <header class="header" id="header">
-        <div><img src="assets/fav-icon.png" alt="" class="logo"></div>
-        <div class="naveg">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: #6a5ec4; padding: 1rem 0"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/fav-icon.png" alt="Voz Amiga" style="height: 40px" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none; background: rgba(255, 255, 255, 0.1)"
+        >
+          <span style="color: white; font-size: 1.5rem">☰</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="index.html"
+                style="color: white; font-weight: 500; margin: 0 1rem"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="sobre.html"
+                style="color: white; font-weight: 500; margin: 0 1rem"
+                >Sobre</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contato.html"
+                style="color: white; font-weight: 500; margin: 0 1rem"
+                >Contato</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="blog.html"
+                style="color: white; font-weight: 500; margin: 0 1rem"
+                >Blog</a
+              >
+            </li>
+          </ul>
+          <a
+            href="#leadForm"
+            class="btn"
+            style="
+              background-color: #d2cfe2;
+              color: #333;
+              font-weight: bold;
+              border-radius: 25px;
+              padding: 8px 20px;
+              text-decoration: none;
+            "
+          >
+            Seja voluntário
+          </a>
         </div>
-        <button class="button"><a href="#leadForm">Seja voluntário</a></button>
-    </header>
+      </div>
+    </nav>
 
     <section class="sec1 p-md-5" id="sec1">
-        <div class="container text-center text">
-            <div class="row">
-                <div class="col-12 col-md-6 div1-sec1">
-                    <p class="titulo-sec1">Uma conversa pode transformar um dia. E um dia transformado, pode mudar uma
-                        vida.<br>
-                    </p>
-                    <p>Milhares de idosos vivem sozinhos e sentem falta de algo simples: uma boa conversa.
-                        No Voz Amiga, você doa o que há de mais valioso — seu tempo e sua escuta — para levar companhia
-                        e alegria a quem precisa.</p>
-                    <button class="button-sec1"><a href="#leadForm">Seja voluntário</a></button>
-                </div>
-                <div class="col-12 col-md-6">
-                    <img class='img' src="assets/idoso.jpg" alt="">
-                </div>
-            </div>
+      <div class="container text-center text">
+        <div class="row">
+          <div class="col-12 col-md-6 div1-sec1">
+            <p class="titulo-sec1">
+              Uma conversa pode transformar um dia. E um dia transformado, pode
+              mudar uma vida.<br />
+            </p>
+            <p>
+              Milhares de idosos vivem sozinhos e sentem falta de algo simples:
+              uma boa conversa. No Voz Amiga, você doa o que há de mais valioso
+              — seu tempo e sua escuta — para levar companhia e alegria a quem
+              precisa.
+            </p>
+            <button class="button-sec1">
+              <a href="#leadForm">Seja voluntário</a>
+            </button>
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="img" src="assets/idoso.jpg" alt="" />
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class=" sec2 p-5" id="sec2">
-        <h2 class="titulo">Como Funciona</h2>
-        <div class="d-flex flex-column flex-md-row mb-3 align-items-center justify-content-center p-5 gap-3 gap-md-5">
-            <div class="card w-100 card-sec2" style="width: 15rem;">
-                <div class="card-body text-center gap-2 ">
-                    <!-- <h5 class="card-title">Card title</h5> -->
-                    <img class="icon" src="assets/cadastrar.png" alt="">
-                    <h6 class="card-subtitle m-2 text-body-secondary">Cadastre-se</h6>
-                    <p class="card-text">Preencha um breve formulário com suas informações.
-                        Em poucos minutos, você estará pronto para fazer parte da rede Voz Amiga.</p>
-                </div>
-            </div>
-            <div class="card w-100 card-sec2" style="width: 15rem;">
-                <div class="card-body text-center">
-                    <img class="icon" src="assets/conexao.png" alt="">
-                    <h6 class="card-subtitle m-2 text-body-secondary">Seja conectado a um idoso</h6>
-                    <p class="card-text">Nós combinamos você com um idoso que mora sozinho, com base em interesses em
-                        comum e disponibilidade. Assim, a conversa flui naturalmente desde o primeiro contato.</p>
-
-                </div>
-            </div>
-            <div class="card w-100 card-sec2" style="width: 15rem;">
-                <div class="card-body text-center ">
-                    <img class="icon" src="assets/conversa.png" alt="">
-                    <h6 class="card-subtitle m-2 text-body-secondary">Converse por vídeo e leve alegria</h6>
-                    <p class="card-text">Escolha um horário, entre na chamada e converse.
-                        Compartilhe histórias, risadas e momentos. A cada ligação, você ajuda a combater a solidão.</p>
-
-                </div>
-            </div>
+    <section class="sec2 p-5" id="sec2">
+      <h2 class="titulo">Como Funciona</h2>
+      <div
+        class="d-flex flex-column flex-md-row mb-3 align-items-center justify-content-center p-5 gap-3 gap-md-5"
+      >
+        <div class="card w-100 card-sec2" style="width: 15rem">
+          <div class="card-body text-center gap-2">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <img class="icon" src="assets/cadastrar.png" alt="" />
+            <h6 class="card-subtitle m-2 text-body-secondary">Cadastre-se</h6>
+            <p class="card-text">
+              Preencha um breve formulário com suas informações. Em poucos
+              minutos, você estará pronto para fazer parte da rede Voz Amiga.
+            </p>
+          </div>
         </div>
+        <div class="card w-100 card-sec2" style="width: 15rem">
+          <div class="card-body text-center">
+            <img class="icon" src="assets/conexao.png" alt="" />
+            <h6 class="card-subtitle m-2 text-body-secondary">
+              Seja conectado a um idoso
+            </h6>
+            <p class="card-text">
+              Nós combinamos você com um idoso que mora sozinho, com base em
+              interesses em comum e disponibilidade. Assim, a conversa flui
+              naturalmente desde o primeiro contato.
+            </p>
+          </div>
+        </div>
+        <div class="card w-100 card-sec2" style="width: 15rem">
+          <div class="card-body text-center">
+            <img class="icon" src="assets/conversa.png" alt="" />
+            <h6 class="card-subtitle m-2 text-body-secondary">
+              Converse por vídeo e leve alegria
+            </h6>
+            <p class="card-text">
+              Escolha um horário, entre na chamada e converse. Compartilhe
+              histórias, risadas e momentos. A cada ligação, você ajuda a
+              combater a solidão.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="p-5">
-        <div class="container text-center text">
-            <div class="row">
-                <div class="col-12 col-md-6 div1-sec1">
-                    <p class="titulo-sec1">Doe alguns minutos. Receba um sorriso.<br>
-                    </p>
-                    <p>Às vezes, tudo o que alguém precisa é de um pouco de atenção.
-                        Ser voluntário do Voz Amiga é uma forma simples e humana de espalhar empatia.
-                        Conecte-se, converse, e descubra o poder de uma boa conversa.</p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="card card-sec2 p-4">
-                        <form id="leadForm">
-                            <p class="titulo-form">Se interessou? Inscreva-se para saber mais!</p>
-                            <input class="input" type="text" id="nome" name="nome" required
-                                placeholder="Nome"><br /><br />
+      <div class="container text-center text">
+        <div class="row">
+          <div class="col-12 col-md-6 div1-sec1">
+            <p class="titulo-sec1">
+              Doe alguns minutos. Receba um sorriso.<br />
+            </p>
+            <p>
+              Às vezes, tudo o que alguém precisa é de um pouco de atenção. Ser
+              voluntário do Voz Amiga é uma forma simples e humana de espalhar
+              empatia. Conecte-se, converse, e descubra o poder de uma boa
+              conversa.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card card-sec2 p-4">
+              <form id="leadForm">
+                <p class="titulo-form">
+                  Se interessou? Inscreva-se para saber mais!
+                </p>
+                <input
+                  class="input"
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  required
+                  placeholder="Nome"
+                /><br /><br />
 
-                            <input class="input" type="email" id="email" name="email" required
-                                placeholder="Email"><br /><br />
+                <input
+                  class="input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Email"
+                /><br /><br />
 
-                            <input class="input" type="text" id="telefone" name="telefone" required
-                                placeholder="Telefone"><br /><br />
+                <input
+                  class="input"
+                  type="text"
+                  id="telefone"
+                  name="telefone"
+                  required
+                  placeholder="Telefone"
+                /><br /><br />
 
-                            <button class="button-form" type="submit">Enviar</button>
-                        </form>
-                    </div>
-                </div>
+                <button class="button-form" type="submit">Enviar</button>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="div-media">
-            <ul class="list-media">
-                <li><img src="../assets/facebook (1).png" alt=""></li>
-                <li><img src="../assets/twitter.png" alt=""></li>
-                <li><img src="../assets/instagram.png" alt=""></li>
-                <li><img src="../assets/linkedin.png" alt=""></li>
-            </ul>
-        </div>
+      <div class="div-media">
+        <ul class="list-media">
+          <li><img src="assets/facebook (1).png" alt="Facebook" /></li>
+          <li><img src="assets/twitter.png" alt="Twitter" /></li>
+          <li><img src="assets/instagram.png" alt="Instagram" /></li>
+          <li><img src="assets/linkedin.png" alt="LinkedIn" /></li>
+        </ul>
+        <p class="text-center text-white">
+          © 2026 Voz Amiga - Todos os direitos reservados
+        </p>
+      </div>
     </footer>
-
 
     <!-- ===================================================================== -->
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyNuRtUPdo0te2EEkKr3gU_5EtgX8sgWtgljtq0_P4k1A3it4D1mQ3DaQU8SiORmwbW/exec'; // sua URL aqui
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyNuRtUPdo0te2EEkKr3gU_5EtgX8sgWtgljtq0_P4k1A3it4D1mQ3DaQU8SiORmwbW/exec"; // sua URL aqui
 
-        document.getElementById('leadForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
+      document
+        .getElementById("leadForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
 
-            const data = {
-                nome: document.getElementById('nome').value,
-                email: document.getElementById('email').value,
-                telefone: document.getElementById('telefone').value,
-            };
+          const data = {
+            nome: document.getElementById("nome").value,
+            email: document.getElementById("email").value,
+            telefone: document.getElementById("telefone").value,
+          };
 
-            try {
-                const res = await fetch(scriptURL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(data),
-                });
+          try {
+            const res = await fetch(scriptURL, {
+              method: "POST",
+              mode: "no-cors",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            });
 
-                // document.getElementById('msg').textContent = 'Cadastro enviado com sucesso!';
-                setTimeout(() => location.reload(), 500);
-            } catch (error) {
-                document.getElementById('msg').textContent = 'Erro ao enviar. Tente novamente.';
-                console.error(error);
-            }
+            // document.getElementById('msg').textContent = 'Cadastro enviado com sucesso!';
+            setTimeout(() => location.reload(), 500);
+          } catch (error) {
+            document.getElementById("msg").textContent =
+              "Erro ao enviar. Tente novamente.";
+            console.error(error);
+          }
         });
 
-
-
-        // Aplica a máscara de telefone
-        const telInput = document.getElementById('telefone');
-        VMasker(telInput).maskPattern('(99) 99999-9999');
+      // Aplica a máscara de telefone
+      const telInput = document.getElementById("telefone");
+      VMasker(telInput).maskPattern("(99) 99999-9999");
     </script>
-</body>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
