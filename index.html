@@ -18,6 +18,39 @@
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
+    <script>
+      window.addEventListener("load", async () => {
+        try {
+          const counterURL =
+            "https://script.google.com/macros/s/AKfycbwphMO5PHq1bGUDqIIqyDKhGvZcbabM__aOReigFfrKlcD1zYOZhgY_g51OkZUd-wwT/exec?page=voluntario";
+          const response = await fetch(counterURL, { mode: "no-cors" });
+
+          if (!response.ok) {
+            console.warn(
+              "Limite de requisições atingido ou erro no servidor:",
+              response.status
+            );
+            return;
+          }
+
+          const text = await response.text();
+          let data;
+
+          try {
+            data = JSON.parse(text);
+          } catch (e) {
+            console.warn("Resposta não era JSON válida:", text);
+            return;
+          }
+
+          document.getElementById("contador-voluntario").textContent =
+            data.visits || 0;
+          console.log("Visitas (Voluntário):", data.visits);
+        } catch (err) {
+          console.error("Erro ao buscar contador:", err);
+        }
+      });
+    </script>
     <script src="https://unpkg.com/vanilla-masker/build/vanilla-masker.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>Voz Amiga</title>
